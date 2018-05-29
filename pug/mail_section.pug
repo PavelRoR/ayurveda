@@ -1,0 +1,27 @@
+section#mail_section.brown_block
+	.container
+		h4 Запишись сейчас  и получи бонус!
+		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").row.form_newsletter
+			#form_container
+				.col-md-3
+					p.form_bonus «23 специи для стимуляции пищеварения и очищения тела»
+				.col-md-3
+					.email-block
+						input( type="hidden" value="1" name="required_fields[email]")
+						input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+				.col-md-3
+					.phone-block
+						input(type="hidden" value="0" name="required_fields[phone_number]")
+						input(class="phone" maxlength="255" name="Contact[phone_number]" type="phone" class="phone" placeholder="79333333333")
+				.col-md-3
+					button(type="submit").button Записаться
+					<!--Обязательный параметр. Не удалять и не изменять!-->
+					input(type="hidden" value="374" name="Contact[id_newsletter]")
+					<!--API код канала рекламы-->
+					input(type="hidden" value="Лихачев. Аюрведа. 18 по 22 июня" name="Contact[id_advertising_channel_page]")
+				.clfix
+			.checking
+				input(type="checkbox" id="check_1" checked).check
+				label(for="check_1").check_label Я согласен с 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки
+					|  персональных данных

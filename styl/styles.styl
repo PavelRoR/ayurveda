@@ -160,5 +160,17 @@ button
 		text-decoration: none
 		color: #fff
 		background-image: linear-gradient( 90deg, rgb(253,131,50) 0%, rgb(255,84,37) 100%);
+@-webkit-keyframes autofill {
+	to {
+		color: #000;
+		background: transparent;
+	}
+}
 
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
 @import 'parts/main'
+@import 'parts/mail_section'
+@import 'parts/footer'

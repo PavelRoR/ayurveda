@@ -1,0 +1,107 @@
+#mail_section
+    h4
+        font-size: 34px;
+        font-family: "PlayfairDisplayBold",serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.1;
+        text-align: center
+        margin-bottom: 35px
+.form_bonus
+    font-size: 20px;
+    font-family: "OpenSansRegular",sans-serif;
+    color: rgb(253, 220, 195);
+    line-height: 1.4;
+    margin 0
+#form_container
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: center
+    input
+        display block
+        border 1px solid rgb(148, 148, 148);
+        background-color: rgb(247, 248, 250);
+        box-shadow: inset 0px 0px 8.55px 0.45px rgba(0, 0, 0, 0.39);
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        font-size: 16px;
+        font-family: "OpenSansRegular",sans-serif;
+        color: rgba(29, 28, 24, 0.702);
+        padding 0 20px
+        border-radius: 50px
+    .button
+        width: 100%
+        margin 0
+.checking
+    display: table
+    margin 10px auto 0
+    width: 415px
+    .check_label
+        font-size: 14px;
+        font-family: "HelveticaNeueCyrRoman", sans-serif;
+        color: rgba(255,255,255, 0.8);
+        line-height: 22px
+        cursor: pointer
+        position: relative
+        display: table-cell
+        vertical-align: middle
+        padding:  0 0 0 30px 
+        a
+            text-decoration: underline
+            color #fff
+            &:focus
+                color: rgba(255,255,255, 0.8);
+            &:hover
+                color: rgba(255,255,255, 0.8);
+.checking .check_label:before {
+	content: '';
+    border-radius: 2px;
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    left: 0
+    top: 0
+    width: 22px;
+    height: 22px;
+
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 18px;
+	height: 18px;
+    left: 3px
+    top: -30px;
+    width: 16px;
+    height: 26px;
+    background-color: transparent;
+    opacity: 0;
+    border-bottom: 3px solid #fe8133;
+    border-right: 3px solid #fe8133;
+    transform: rotate(41deg);
+    transition: all .5s ease
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0
+    height 0
+    border: 0
+    left -99999px
+}
+
+.check:checked + label:before  {
+    border 1px solid rgb(196, 196, 196);
+	background-color #fff;
+
+}
+.check:checked + label:after  {
+	opacity: 1;
+    top: -10px;
+    transition: all .5s ease
+}
