@@ -52,47 +52,59 @@
 				background-image: linear-gradient( 90deg, rgb(253,131,50) 0%, rgb(255,84,37) 100%);
 				color: #150d06
 .modal-content
-	background: #4a4a4a
-	border 3px solid pr_pink
+	background: #fefefe
+	border 3px solid #aaa
 	text-align center
 	padding 20px
-	.form_newsletter
-		display: block
-		height auto
-		h4
-			text-align: center
-			margin-bottom: 10px
-		p
-			font-size: 28px;
-			font-family: "RobotoRegular", sans-serif;
-			color: #fddcc3
-			line-height: 1.2;
-			text-align center
-			margin-top: 0
-			margin-bottom: 20px
-		.infront_submit,
-		.span_phone
-			font-size: 18px
-			margin-bottom 20px
-			color: #fff
-		.email-block input,
-		.phone-block input
-			margin 0 0 20px
 	.close
 		position absolute
 		border 0
 		border-radius 50%
-		width 20px
-		height 20px
-		font-size 20px
-		line-height 22px
+		width 40px
+		height 40px
+		font-size 30px
+		line-height 32px
 		right 20px
 		top 20px
 		z-index 999
 		padding: 0;
 		text-align: center;
+		transform: rotate(-90deg)
+		transition:  all .3s ease-in-out
 		&:hover
+			transform: rotate(90deg)
 			background: rgb(22,21,17)
 			color: #fff
 			border: 1px solid #eee
 			line-height 20px
+			transition:  all .3s ease-in-out
+#myPolitics
+	.modal-title
+		font-size: 24px
+		small
+			display block
+	.modal-body
+		p
+			font-family: 'OpenSansRegular', sans-serif
+			text-align: left
+			font-size: 18px
+			margin-bottom: 20px
+#myModalForm
+	.modal-content
+		background-color: #2d1b0c
+	.form_modal
+		h4
+			font-size: 34px;
+			font-family: "PlayfairDisplayBold",serif;
+			color: rgb(255, 255, 255);
+			line-height: 1.1;
+			text-align: center
+			margin-bottom: 24px
+		.form_bonus
+			margin-bottom: 20px
+		input
+			margin 0 auto 20px
+			width: 350px
+		.button
+			width: 350px
+			margin 0 auto 10px
