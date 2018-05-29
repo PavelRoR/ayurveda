@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSansLight.ttf') format('truetype'),
+         url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSansItalic.eot');
+    src: url('../fonts/OpenSansItalic.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansItalic.woff2') format('woff2'),
+         url('../fonts/OpenSansItalic.woff') format('woff'),
+         url('../fonts/OpenSansItalic.ttf') format('truetype'),
+         url('../fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('../fonts/OpenSansBoldItalic.eot');
+    src: url('../fonts/OpenSansBoldItalic.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansBoldItalic.woff2') format('woff2'),
+         url('../fonts/OpenSansBoldItalic.woff') format('woff'),
+         url('../fonts/OpenSansBoldItalic.ttf') format('truetype'),
+         url('../fonts/OpenSansBoldItalic.svg#OpenSansBoldItalic') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSansBold.eot');
+    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansBold.woff2') format('woff2'),
+         url('../fonts/OpenSansBold.woff') format('woff'),
+         url('../fonts/OpenSansBold.ttf') format('truetype'),
+         url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSansSemibold.eot');
+    src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+         url('../fonts/OpenSansSemibold.woff') format('woff'),
+         url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+         url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayBlack';
+    src: url('../fonts/PlayfairDisplayBlack.eot');
+    src: url('../fonts/PlayfairDisplayBlack.eot') format('embedded-opentype'),
+         url('../fonts/PlayfairDisplayBlack.woff2') format('woff2'),
+         url('../fonts/PlayfairDisplayBlack.woff') format('woff'),
+         url('../fonts/PlayfairDisplayBlack.ttf') format('truetype'),
+         url('../fonts/PlayfairDisplayBlack.svg#PlayfairDisplayBlack') format('svg');
+}
+@font-face {
+    font-family: 'PlayfairDisplayBold';
+    src: url('../fonts/PlayfairDisplayBold.eot');
+    src: url('../fonts/PlayfairDisplayBold.eot') format('embedded-opentype'),
+         url('../fonts/PlayfairDisplayBold.woff2') format('woff2'),
+         url('../fonts/PlayfairDisplayBold.woff') format('woff'),
+         url('../fonts/PlayfairDisplayBold.ttf') format('truetype'),
+         url('../fonts/PlayfairDisplayBold.svg#PlayfairDisplayBold') format('svg');
+}
+
+
+*
+	margin 0
+	padding 0
+	outline none
+
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+button
+	border: none	
+.video_wrapper
+	margin 0 auto
+	position relative
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #fff
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.brown_block
+	background-color: #2d1b0c
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.15);
+	padding 45px 0
+	position relative
+	&:before
+	&:after
+		content: ''
+		display block
+		position: absolute
+		height 1px
+		width: 100%
+		background-color: #FEFEFE
+		left 0
+		right 0
+	&:before
+		top 5px
+	&:after
+		bottom: 5px
+.button
+	display block
+	background-image: linear-gradient( -90deg, rgb(253,131,50) 0%, rgb(255,84,37) 100%);
+	width: 261px;
+	height: 58px;
+	line-height: 58px;
+	border-radius: 50px
+	font-size: 26px;
+	font-family: "PlayfairDisplayBlack", serif;
+	color: #fff
+	text-align: center
+	margin 50px auto 0
+	padding 0 35px
+	&:focus
+		text-decoration: none 
+		color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-image: linear-gradient( 90deg, rgb(253,131,50) 0%, rgb(255,84,37) 100%);
