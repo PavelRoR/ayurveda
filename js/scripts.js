@@ -1,43 +1,74 @@
 $(document).ready(function () {
-/*Работа отправки данных*/
+    /*Работа отправки данных*/
     $(function () {
+        var message = $('.alert_message', this),
+            email = $(".mail", this),
+            phone = $(".phone", this),
+            check = $('.check', this),
+            reNone = /.+/,
+            reEm = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/,
+            rePh = /^[+]?\d*\.?\d*$/,
+            mess;
         $("body").on("submit", ".form_newsletter", function (e) {
             var message = $('.alert_message', this),
-                emVal = $(".mail", this).val(),
-                pVal = $(".phone", this).val(),
-                check = $('.check', this),
-                reNone = /.+/,
-                reEm = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/,
-                rePh = /^[+]?\d*\.?\d*$/,
-                mess;
-
-            if (!emVal.match(reNone)) {
-                message.text('Введите email').slideDown(500).delay(2000).slideUp(500);
+            email = $(".mail", this),
+            phone = $(".phone", this),
+            check = $('.check', this),
+            reNone = /.+/,
+            reEm = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/,
+            rePh = /^[+]?\d*\.?\d*$/,
+            mess;
+            $(".form_newsletter",this).submit().delay(2000);
+            if (!email.val().match(reNone)) {
+                email.css("border", "1px solid red");
+                message.text('Введите email').slideDown(500)
                 return false
             };
-            if (!emVal.match(reEm)) {
-                message.text('Email введен некорректно').slideDown(500).delay(2000).slideUp(500);
+            if (!email.val().match(reEm)) {
+                email.css("border", "1px solid red");
+                message.text('Email введен некорректно').slideDown(500);
                 return false;
-
             };
-            if (!pVal.match(reNone)) {
-                message.text('Введите телефон').slideDown(500).delay(2000).slideUp(500);
+            if (!phone.val().match(reNone)) {
+                phone.css("border", "1px solid red");
+                message.text('Введите телефон').slideDown(500);
                 return false
             };
-            if (!pVal .match(rePh)) {
-                message.text('Только цифры в поле телефона').slideDown(500).delay(2000).slideUp(500);
+            if (!phone.val().match(rePh)) {
+                phone.css("border", "1px solid red");
+                message.text('Только цифры в поле телефона').slideDown(500);
+                phone.val('');
                 return false
             };
-
             if (!check.prop("checked")) {
-                message.text('Подтвердите соглашение').slideDown(500).delay(2000).slideUp(500);
+                check.next().css("color", "red");
+                message.text('Подтвердите соглашение').slideDown(500);
                 return false
             };
-
-            
+            $('.button',this).text('Отправлено!');
+            // e.preventDefault();
+            if(email && phone && check) {
+                window.open('http://mastervision.su/https://mastervision.su/likhachev-ayurveda-18-06-2018/bonus')
+            }
         });
-
+        email.click(function () {
+            email.css("border-color", "rgb(232, 232, 232)");
+            message.slideUp(500);
+        });
+        phone.click(function () {
+            phone.css("border-color", "rgb(232, 232, 232)");
+            message.slideUp(500);
+        });
+        check.click(function () {
+            check.next().css("color", "rgba(255,255,255,0.8)");
+            message.slideUp(500);
+        });
     });
-
+    $(function () {
+        $(".video_wrapper").click(function () {
+            var a = $(this).attr("data-youtube");
+            $(this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" frameborder="0" class="video_testimonial" allowfullscreen></iframe>')
+        });
+    });
     /*Конец документа*/
 });
