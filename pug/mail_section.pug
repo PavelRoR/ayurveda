@@ -2,13 +2,14 @@ section#mail_section.brown_block
 	.container
 		h4 Запишись сейчас и получи бонус!
 		form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").row.form_newsletter
+			p.alert_message
 			#form_container
 				.col-md-3
 					p.form_bonus «23 специи для стимуляции пищеварения и очищения тела»
 				.col-md-3
 					.email-block
 						input( type="hidden" value="1" name="required_fields[email]")
-						input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
+						input(class="mail" maxlength="255" name="Contact[email]" type="text"  placeholder="Ваш email")
 				.col-md-3
 					.phone-block
 						input(type="hidden" value="0" name="required_fields[phone_number]")

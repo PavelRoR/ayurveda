@@ -12,6 +12,7 @@ footer#footer
 					form#modalForm(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").form_newsletter.form_modal
 						h4 Запишись сейчас и получи бонус!
 						p.form_bonus «23 специи для стимуляции пищеварения и очищения тела»
+						p.alert_message
 						.email-block
 							input( type="hidden" value="1" name="required_fields[email]")
 							input(class="mail required" maxlength="255" name="Contact[email]" type="text" placeholder="Ваш email")
@@ -24,7 +25,7 @@ footer#footer
 						<!--API код канала рекламы-->
 						input(type="hidden" value="Лихачев. Аюрведа. 18 по 22 июня" name="Contact[id_advertising_channel_page]")
 						.checking
-							input(type="checkbox" id="check_1" checked).check
+							input(type="checkbox" id="check_2" checked).check
 							label(for="check_2").check_label Я согласен с 
 								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки
 								|  персональных данных
