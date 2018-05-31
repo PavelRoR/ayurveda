@@ -72,7 +72,7 @@ $(document).ready(function () {
     });
     /* Якорь */
 	$(function () {
-		$("a[href^='#']").click(function (h) {
+		$("a[href^='#spice_table_section']").click(function (h) {
 			h.preventDefault();
 			var f = $(this).attr("href"),
 				g = $(f).offset().top;
