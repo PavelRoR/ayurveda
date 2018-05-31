@@ -65,7 +65,7 @@ $(document).ready(function () {
     });
     /*Видео*/
     $(function () {
-        $(".video_wrapper").click(function () {
+        $("#video_slider .video_wrapper").click(function () {
             var a = $(this).attr("data-youtube");
             $(this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" frameborder="0" class="video_testimonial" allowfullscreen></iframe>')
         });
