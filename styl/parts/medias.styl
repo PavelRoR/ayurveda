@@ -232,6 +232,8 @@
     #video_slider .controls
     #bonus_title + p
         width: 100%
+    .spice_table td, .spice_table th
+        padding: 10px 5px
 @media screen and (max-width 767px)
     .for_container
         width: 350px;
@@ -264,11 +266,18 @@
             width: 80%
     #branch_small
         left 0
+    #spice_table
+        display: none
+    #mob_spice_table
+        display block
+    #spice_table_section
+        padding: 30px 0
 @media screen and (max-width 650px)
     .date
         width: 100%;
         background-size: contain;
     #main_video_wrapper
+    #bonus_main_video_wrapper
     h2
         width: 100%
     .day_descript
@@ -311,6 +320,10 @@
     #branch_big
     #branch_left, #branch_right
         display: none
+    #mob_spice_table
+        width 100%
+    .soc_buttons a
+        margin 0 8px 20px
 @media screen and (max-width 425px)
     .button
         font-size: 24px
@@ -387,10 +400,19 @@
     .checking .check_label
         font-size: 12px
     #myModalForm .form_modal h4
+    #spice_table_section h3
         font-size: 24px
     .modal-content .close
         top:  5px
         right 5px
+    #bonus_main_video_wrapper
+        margin-top: 20px
+    #bonus h1
+        font-size: 26px
+    .spice_button
+        margin-top: 20px
+    #footer h5
+        font-size: 20px
 @media screen and (max-width 360px)
     .button
         width: 100%
@@ -435,3 +457,8 @@
         small
             font-size: 14px
             padding-top: 2px
+    .spice_button
+        width: 100%
+        padding 10px
+        height auto
+        line-height: 1.2
