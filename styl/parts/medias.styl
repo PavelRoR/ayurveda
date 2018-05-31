@@ -194,6 +194,10 @@
         margin 0 auto 20px
     .for_container
         margin-bottom: 10px
+    .for_container:first-of-type
+        background-position-x: 49px;
+    .for_container:nth-of-type(2), .for_container:nth-of-type(3), .for_container:nth-of-type(5)
+        background-position-x: 70px;
     .for_container:last-of-type
         background-position-x: 43px;
         width: 350px;
@@ -201,8 +205,11 @@
         margin: 0 auto;
         clear: both;
     .day_pic
-    .day_descript
     #day_2 .day_pic
+        float: none
+        width 100%
+        margin 0 auto 20px
+    .day_descript
     #author_descript
         float: none
         width 600px
@@ -225,3 +232,162 @@
     #video_slider .controls
     #bonus_title + p
         width: 100%
+@media screen and (max-width 767px)
+    .for_container
+        width: 350px;
+        float: none;
+        margin: 0 auto;
+        clear: both
+    .for_container:first-of-type
+        background-position-x: 33px;
+    .for_container:nth-of-type(2), .for_container:nth-of-type(3), .for_container:nth-of-type(5)
+        background-position-x: 59px;
+    .for_container:last-of-type
+        background-position-x: 33px;
+    #for_whome
+    #responses_container
+    #bonus_section
+        padding: 50px 0
+    #day_2 .day_pic, .day_pic
+        height 300px
+    .day_descript h4
+        text-align: center
+    #plan
+    #author_container
+        padding-bottom: 50px
+    #author_img
+    .whore_whome_title
+        margin-bottom: 0
+    #video_slider 
+        margin-bottom: 45px;
+        .video_wrapper
+            width: 80%
+    #branch_small
+        left 0
+@media screen and (max-width 650px)
+    .date
+        width: 100%;
+        background-size: contain;
+    #main_video_wrapper
+    h2
+        width: 100%
+    .day_descript
+    #day_2 .day_descript
+        width: 100%
+        padding  0 30px 20px
+    #author_descript
+        width: 90%
+    #video_slider .video_wrapper
+        width: 76%
+    #text_slider .testim_container
+        width: 76%
+        max-height: 323px
+        overflow-x: scroll
+    #bonus_title
+        width: 100%;
+        background-size:  contain;
+        background-position: center;
+    #bonus_section .button
+        width: 300px;
+        height: auto;
+        line-height: 1.1;
+        padding: 10px 20px;
+    .form_newsletter .button, .form_newsletter input
+    .checking
+        width: 380px
+@media screen and (max-width 480px)
+    #responses_container
+        padding-bottom: 100px
+    #video_slider
+        margin-bottom: 80px
+    #video_slider .video_wrapper
+    #text_slider .testim_container
+        width: 100%
+    #text_slider .controls
+    #video_slider .controls
+        top auto
+        bottom 15px
+     #branch_small
+    #branch_big
+    #branch_left, #branch_right
+        display: none
+@media screen and (max-width 425px)
+    .button
+        font-size: 24px
+    .contacts .fa
+    .contacts .fa + span
+        font-size: 14px
+    .date
+        margin: 0 auto
+        font-size: 18px
+        height auto
+    h1
+        font-size: 34px
+        margin: 20px 0
+    h2
+        font-size: 22px
+        line-height: 1.2
+    #mail_section h4
+        font-size: 24px
+        margin-bottom: 10px
+    .form_bonus
+        font-size: 18px
+    .form_newsletter .button, .form_newsletter input
+    #bonus_section .button
+    #myModalForm .form_modal input
+    #myModalForm .form_modal .button
+        width: 100%
+    .checking
+        width: 90%
+    #for_whome
+    #footer
+        padding: 30px 0
+    #responses_container
+        padding 30px 0 60px
+    .whore_whome_title
+    .brown_block h3
+        font-size: 34px
+    .for_container p
+        font-size: 18px
+    .whore_whome_subtitle
+        font-size: 26px
+        margin-top: 30px
+    #day_2 .day_pic, .day_pic
+        height 200px
+    .day_descript h4
+        font-size: 24px
+        margin-bottom: 20px
+    .plan_subtitle
+    .last_bg
+        font-size: 26px
+    #author_img
+        width: 280px
+        height: 325px
+        background-position-x: -30px
+    .partner_button
+        width: 100%
+        height auto
+        line-height: 1.2
+        padding 10px 0
+    #text_slider .testim_container p
+    #myPolitics .modal-body p
+        font-size: 16px
+    #bonus_title
+        padding-top: 30px
+        font-size: 34px
+        small
+            font-size: 18px
+    #bonus_title + p
+        font-size: 24px
+        line-height: 1.2
+        margin: 20px 0
+    .modal-content
+        padding: 10px
+    #footer #conditions, #footer p
+        font-size: 12px
+    #myModalForm .form_modal h4
+        font-size: 24px
+    .modal-content .close
+        top:  5px
+        right 5px
+// @media screen and (max-width 360px)
